@@ -423,8 +423,8 @@ func testCli(t *testing.T, test CliTest) {
 }
 
 func cliTest(expectUsage, expectErr bool, args ...string) *CliTest {
-	fmt.Println ("uage %t\n", expectUsage)
-	fmt.Println ("exp %t\n", expectErr)
+	fmt.Printf ("uage %t\n", expectUsage)
+	fmt.Printf ("exp %t\n", expectErr)
 	for _, value := range args {
 		fmt.Printf("- %s\n", value)
 	}
