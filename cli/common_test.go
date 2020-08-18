@@ -340,6 +340,7 @@ func testCli(t *testing.T, test CliTest) {
 		// Add access args
 		if !hasE {
 			args = []string{"-E", "https://127.0.0.1:10001", "-T", myToken}
+			fmt.Printf("TOKEN %s", myToken)
 			for _, a := range test.args {
 				args = append(args, a)
 			}
